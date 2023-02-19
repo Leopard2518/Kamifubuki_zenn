@@ -1,1 +1,2 @@
-TODO: 新規投稿作成
+TODO: コンパイラ方式の違い
+TODO: .NET FrameWork
