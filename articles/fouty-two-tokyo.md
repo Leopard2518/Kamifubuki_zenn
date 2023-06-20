@@ -7,4 +7,3 @@ published: false
 ---
 
 今回、自分は42Tokyo
-
