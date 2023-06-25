@@ -68,6 +68,7 @@ published: true
 
 - 2月 転職活動開始,本格的にC#,Javaの学習を始める
 - 2月 Twitterにいる若年エンジニアを見て夢見る
+- 3月 同業転職
 :::
 
 ::: message
