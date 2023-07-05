@@ -6,3 +6,7 @@ topics: ["macOS", "JavaScript", "VSCode",]
 published: false
 ---
 
+## 対象
+このサイトはMacOSにインストールしたVSCodeにJavaScriptの開発環境を構築することを目標にしています。
+
+VSCodeのインストールやセットアップ等VSCodeに関わる設定は終わっている状態を想定しているので、VSCode
