@@ -37,12 +37,14 @@ published: true
 - Java
 - Blender
 - AfterEffects
+- network
 
 ## 将来の夢
 
 - SE
 - 3DCDエンジニア
 - モーショングラフィックスデザイナー
+- -CCNA取得
 
 :::details 経歴
 
