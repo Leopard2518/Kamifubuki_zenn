@@ -13,11 +13,6 @@ published: true
 ::: message alert
 **解決しています**
 現在サイトにアクセスできない事態は解決したものの、メールアドレスには一部メールが届かない事態が引き続き発生しています。解決方法がわからず奮闘中です
-
-icloud.com > kamifubuki-ao.com
-kamifubuki-ao.com > icloud.com
-は届くものの、Gmailやその他メールサービスからはメールを送受信できていないです。
-
 ↓
 
 解決しました。
