@@ -61,9 +61,11 @@ published: true
 
 | レコード名 | タイプ | 値 |
 | ---- | ---- | ---- |
+|kamifubuki-ao.com | CNAME | {IPv4 for sakura(Webserver)}
 | {domain} | MX | 10 {さくらのレンタルサーバの初期ドメイン}.sakura.ne.jp. |
 | mail.{domain} | CNAME | {domain}. |
 | ftp.{domain} | CNAME | {domain}. |
+
 
 :::
 
@@ -96,6 +98,13 @@ EX.
 
 実際にリンクにアクセスして問題なく問題なく自分のサイトに接続できるか確認してください。
 **キャッシュの影響で前のサイトが表示される可能性があるため、プライベートブラウザでの確認を推奨します**
+
+### 次回
+
+- APEXドメインからwww.つきドメインへのリダイレクト
+- AWS側でSSL証明書を実装
+
+次回: now on writing...
 
 [mydomain-link]: http://www.kamifubuki-ao.com/ "独自管理ドメイン"
 [sakura-addr]: https://www.sakura.ad.jp/ "さくらインターネットHP"
