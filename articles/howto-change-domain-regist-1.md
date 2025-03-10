@@ -61,7 +61,7 @@ published: true
 
 | レコード名 | タイプ | 値 |
 | ---- | ---- | ---- |
-|kamifubuki-ao.com | CNAME | {IPv4 for sakura(Webserver)}
+|kamifubuki-ao.com | CNAME | {IPv4 for sakura(Webserver)} |
 | {domain} | MX | 10 {さくらのレンタルサーバの初期ドメイン}.sakura.ne.jp. |
 | mail.{domain} | CNAME | {domain}. |
 | ftp.{domain} | CNAME | {domain}. |
