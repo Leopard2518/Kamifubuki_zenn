@@ -21,6 +21,8 @@ published: true
 
 ---
 
+## はじめに
+
 ### 自分の状況
 
 - [さくらのドメイン][domain-sakura-ne-jp]にて契約した独自ドメイン
@@ -30,15 +32,13 @@ published: true
 - AWSのリージョンはアジアパシフィック(東京)を使用。Route 53はグローバル
 - 自分の管理しているアドレスはkamifubuki-ao.com
 - 最終的にはAPEXドメイン→www.つきドメインにリダイレクトしたい
-- https接続ができるようにしたい
-
----
+- SSL証明書の管理をAWS側でできるようにしたい
 
 ### 今回最終的に目指す構成
 
 ![config diagram](/images/howto-change-domain-regist/AWS-configDiagram-Web.png)
 
-### Route 53にてホストゾーンを新規作成
+## Route 53にてホストゾーンを新規作成
 
 ![AWS console](/images/howto-change-domain-regist/AWS_Route53_1.png)
 右上のホストゾーンの作成から新しい新しいホストゾーンを作成します。
@@ -66,20 +66,19 @@ published: true
 | mail.{domain} | CNAME | {domain}. |
 | ftp.{domain} | CNAME | {domain}. |
 
-
 :::
 
 ::: message alert
 冒頭にも記載しましたが、さくらのドメインでは独自ドメインをアライアスとして"@"表記しているようです。Route 53にそのままコピーせずに{domain}になおして入力してください。
 EX.
 
-#### さくらのドメイン
+### さくらのドメイン
 
 | レコード名 | タイプ | 値 |
 | ---- | ---- | ---- |
 | ftp.kamifubuki-ao.com | CNAME | @ |
 
-#### Rouite 53
+### Route 53
 
 | レコード名 | タイプ | 値 |
 | ---- | ---- | ---- |
@@ -87,19 +86,19 @@ EX.
 
 :::
 
-### さくらのドメインのWhois情報に設定されているDNSをAWSのものに設定する
+## さくらのドメインのWhois情報に設定されているDNSをAWSのものに設定する
 
 ![Sakura domain](/images/howto-change-domain-regist/Sakura-domain.png)
 中程にあるネームサーバを編集をクリックしてAWSでゾーンを作成して時に自動的に作成された4つのDNSに設定します。
 
 ![DNS-settings](/images/howto-change-domain-regist/dns-settings.png)
 
-### ドメインの移管準備は完了
+## ドメインの移管準備は完了
 
 実際にリンクにアクセスして問題なく問題なく自分のサイトに接続できるか確認してください。
 **キャッシュの影響で前のサイトが表示される可能性があるため、プライベートブラウザでの確認を推奨します**
 
-### 次回
+## 次回
 
 - APEXドメインからwww.つきドメインへのリダイレクト
 - AWS側でSSL証明書を実装
