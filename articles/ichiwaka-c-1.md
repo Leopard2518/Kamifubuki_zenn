@@ -3,7 +3,7 @@ title: "いちからわかるC# #1 ~概要と特徴~"
 emoji: "💻"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Csharp","プログラミング"]
-published: true
+published: false
 ---
 
 ## C#の概要
