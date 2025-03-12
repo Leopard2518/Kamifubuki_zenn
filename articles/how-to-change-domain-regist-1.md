@@ -61,7 +61,7 @@ published: true
 
 | レコード名 | タイプ | 値 |
 | ---- | ---- | ---- |
-|kamifubuki-ao.com | CNAME | {IPv4 for sakura(Webserver)} |
+| kamifubuki-ao.com | A | {IPv4 for sakura(Webserver)} |
 | {domain} | MX | 10 {さくらのレンタルサーバの初期ドメイン}.sakura.ne.jp. |
 | mail.{domain} | CNAME | {domain}. |
 | ftp.{domain} | CNAME | {domain}. |
@@ -102,6 +102,11 @@ EX.
 
 - APEXドメインからwww.つきドメインへのリダイレクト
 - AWS側でSSL証明書を実装
+
+::: message
+2025.3.11   構成図にACMを追加しました。
+2023.3.12   [こちら](#route-53にてホストゾーンを新規作成)でさくらのレンタルサーバからRoute53にコピーすべきレコードの欄の一番上が誤ってCNAMEと記載していたので A に修正しました。
+:::
 
 次回: now on writing...
 

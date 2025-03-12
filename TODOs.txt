@@ -1,2 +1,1 @@
-TODO: コンパイラ方式の違い
-TODO: .NET FrameWork
+TODO: Route53のレコードがそのまま乗っていないか確認
